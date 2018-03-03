@@ -1,0 +1,81 @@
+// CLASES CON DETALLES PARA ACUMULAR
+
+/* algunas cosas las he separado bastante, 
+como hacen en los frameworks, 
+porque he visto que asi se me hace un poco más cómodo, en lugar de clases largas */
+
+
+
+/*
+.fondopruebas {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(255, 0, 0, 0.1);
+}*/
+
+.centrado {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ancho {
+    width: 100%;
+    height: auto;
+}
+
+.maxcaracteres {
+    max-width: 40em;
+}
+
+.padx1 {
+    padding: 2px;
+}
+
+.padx2 {
+    padding: 16px;
+}
+
+.padx3 {
+    padding: 24px;
+}
+
+.padx4 {
+    padding: 48px;
+}
+
+
+.fija {
+    position: fixed;
+}
+
+
+.margenvx3 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.flexcentro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textocentro {
+    text-align: center;
+}
+
+//para que las cosas no empiecen x debajo de la nav
+.navmargen {
+    height: 60px;
+}
+
+.mayusculas {
+    text-transform: uppercase;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.textocolor {
+    color: $color-principal!important;
+}

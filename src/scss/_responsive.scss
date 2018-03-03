@@ -1,0 +1,182 @@
+/* ############################################ */
+
+
+/* indicadores del tamaño actual */
+
+.ojoresponsive {
+    color: rgba(0, 0, 0, 0.3);
+    display: inline;
+}
+
+
+/* ############################################ */
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 439px) {
+    /* mostrar indicadores de tamaño */
+    #movil {
+        display: flex;
+    }
+    #tablet {
+        display: none;
+    }
+    #grande {
+        display: none;
+    }
+    #tocho {
+        display: none;
+    }
+}
+
+
+/* MEDIANO: LANDSCAPE, TABLET ETC */
+
+@media (min-width: 440px) {
+    /* mostrar indicadores de tamaño */
+    #movil {
+        display: none;
+    }
+    #tablet {
+        display: flex;
+    }
+    #grande {
+        display: none;
+    }
+    #tocho {
+        display: none;
+    }
+    .coleccion {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .tarjeta {
+        flex-basis: 40%;
+        margin: 24px;
+        white-space: nowrap;
+    }
+    .tarjeta a {
+        margin: 0;
+    }
+    .tarjeta a:hover,
+    .tarjeta a:focus {
+        background: none;
+        /* border-bottom: solid 8px #3BB; */
+        transform: scale(1.04);
+        box-shadow: 0 10px 50px rgba(0, 0, 50, .28);
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        white-space: nowrap;
+        float: left;
+    }
+    .tarjeta a:active {
+        background: white;
+        transform: scale(0.98);
+    }
+    .banner  {
+        height: 220px;
+    }
+
+    .banner h2 {
+        font-size: 150%;
+    }
+
+    nav {
+        font-size: 110%;
+    }
+
+    // DETALLE #########################
+    .fotogrande {
+        flex-basis: 40%;
+    }
+
+    .descripcion{
+    flex-basis: 20%;
+}
+}
+
+
+/* GRANDE: TABLET ANCHA Y ESCRITORIO */
+
+@media (min-width: 1024px) {
+    /* mostrar indicadores de tamaño */
+    #movil {
+        display: none;
+    }
+    #tablet {
+        display: none;
+    }
+    #grande {
+        display: flex;
+    }
+    #tocho {
+        display: none;
+    }
+
+
+
+    .tarjeta {
+        flex-basis: 20%;
+        margin: 48px;
+        padding: 0px;
+        max-width: 290px;
+    }
+    .navbar {
+        padding: 0px 10%;
+    }
+    .contenido {
+        padding: 48px 10%;
+    }
+
+    .padx2 {
+        padding: 48px 0px;
+    }
+
+    .padx3 {
+        padding: 48px 0px;
+    }
+
+    nav {
+        font-size: 120%;
+    }
+
+
+    .detalle {
+        flex-wrap: nowrap;
+        flex-grow: 1;
+        flex-direction: row;
+        max-width: 800px;
+        max-height: 720px;
+
+    }
+
+}
+
+// TOCHO
+@media (min-width: 1200px) {
+
+
+    /* mostrar indicadores de tamaño */
+    #movil {
+        display: none;
+    }
+    #tablet {
+        display: none;
+    }
+    #grande {
+        display: none;
+    }
+
+    #tocho {
+        display: flex;
+    }
+
+
+    .contenido {
+        margin: 48px auto;
+    }
+}

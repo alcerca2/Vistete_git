@@ -1,0 +1,23 @@
+.banner {
+    background-color: $color-principal;
+    color: white;
+}
+
+.banner h2{
+    letter-spacing: 5px!important;
+    text-transform: uppercase;
+}
+
+.fotofondo1 {
+    background: url(bannerimages/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.fotofondo2 {
+    background: url(bannerimages/banner2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}

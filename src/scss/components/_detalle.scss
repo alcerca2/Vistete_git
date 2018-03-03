@@ -1,0 +1,24 @@
+.detalle {
+    flex-wrap: wrap;
+    flex-grow: 2;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.descripcion {
+    max-width: 20em;
+    background: white;
+    box-shadow: 0px 10px 100px $color-sombra;
+    padding: 24px;
+    z-index: 50;
+}
+
+.descripcion h1, .descripcion h3 {
+    margin: 0px;
+}
+
+.descripcion span {
+    color: $color-gris;
+    font-size: 150%;
+}

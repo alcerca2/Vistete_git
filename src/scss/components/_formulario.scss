@@ -1,0 +1,77 @@
+// CAMPOS Y BOTONES
+
+input {
+    /* width: 100%; */
+    border: none;
+    background: none;
+}
+
+input:focus, input:active {
+    box-shadow: none;
+}
+
+input::placeholder {
+    color: $color-gris;
+    font-weight: lighter;
+}
+
+
+.barrabusqueda {
+    border-style: none;
+    border-bottom: 2px solid $color-texto;
+}
+
+input {
+    border: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    border-radius: none!important;
+}
+
+
+.campo {
+    border: none;
+    height: 48px;
+    max-width: 30em;
+    background: white;
+    padding: 0px 16px;
+    margin: none;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 80%;
+
+}
+
+.boton {
+    height: 48px;
+    padding: 4px 16px;
+    cursor: pointer;
+    margin: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 80%;
+}
+
+.bordelinea {
+    background: none;
+    color: $color-principal;
+    border-style: none;
+    border: 2px solid $color-principal;
+}
+
+
+.fondonegro {
+    background: $color-texto;
+    color: white;
+    border: none;
+}
+
+.fondoprincipal {
+    background: $color-principal;
+    color: white;
+    border: none;
+}

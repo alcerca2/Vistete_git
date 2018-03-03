@@ -1,0 +1,63 @@
+/* GALERÏA CON TARJETAS DE PRODUCTO @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.coleccion {
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    border-style: none;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    flex-basis: 20%;
+}
+
+.tarjeta h1,
+.tarjeta h2,
+.tarjeta h3,
+.tarjeta h4,
+.tarjeta h5 {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.tarjeta a,
+.tarjeta a:visited,
+.tarjeta a:hover {
+    background: none;
+}
+
+.tarjeta .info {
+    padding-bottom: 10px;
+    padding: 16px;
+    text-align: center;
+}
+
+.producto img {
+    object-fit: cover;
+    display: block;
+}
+
+.tarjeta .producto {
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: rgba(0, 0, 0, 0.4);
+    margin: 0;
+}
+
+.coleccion a {
+    padding: 0;
+    margin: 0;
+    background-color: none;
+    text-decoration: none;
+    transition: all 200ms;
+}
+
+.tarjeta span {
+    font-weight: lighter;
+    color: $color-gris;
+}

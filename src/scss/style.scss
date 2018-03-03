@@ -1,0 +1,38 @@
+// CARGAR TODOS LOS CACHOS DE CSS
+
+
+//como el reset pero más bestia
+@import "normalize"; 
+
+//colores y tamaños generales
+@import "variables"; 
+
+//Fuentes Google
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,700,900&subset=latin-ext');
+
+//etiquetas modificadas
+@import "html_tags"; 
+
+//cosas varias del estilo
+@import "clases"; 
+
+//barra logo y navegación general
+@import "components/header"; 
+
+//título de la principal
+@import "components/banners"; 
+
+//galería de productos en el index
+@import "components/coleccion"; 
+
+//campos y botones
+@import "components/formulario";
+
+//pie de página general
+@import "components/footer";
+
+//layout página detalle
+@import "components/detalle";
+
+//reglas para 3 tamaños
+@import "responsive";
