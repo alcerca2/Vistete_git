@@ -528,7 +528,7 @@ input::placeholder {
 
 .barrabusqueda {
   border-style: none;
-  border-bottom: 2px solid #333; }
+  border: none; }
 
 input {
   border: none;
@@ -569,21 +569,21 @@ input {
   transform: scale(0.96);
   box-shadow: none; }
 
-.bordelinea {
-  background: none;
-  color: #3BB;
-  border-style: none;
-  border: 2px solid #3BB; }
+.fondoprincipal {
+  background: #3BB;
+  color: white;
+  border: none; }
 
 .fondonegro {
   background: #333;
   color: white;
   border: none; }
 
-.fondoprincipal {
-  background: #3BB;
-  color: white;
-  border: none; }
+.bordelinea {
+  background: none;
+  color: #3BB;
+  border-style: none;
+  border: 2px solid #3BB; }
 
 footer {
   background: none;
@@ -637,6 +637,8 @@ son unos letreros que tenía para ayudarme a trabajar y he quitado */
     flex-basis: 40%;
     margin: 24px;
     white-space: nowrap; }
+  .barrabusqueda {
+    border-bottom: 2px solid #3BB; }
   .tarjeta a {
     margin: 0; }
   .tarjeta a:hover,

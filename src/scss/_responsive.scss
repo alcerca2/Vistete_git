@@ -36,6 +36,11 @@ son unos letreros que tenía para ayudarme a trabajar y he quitado */
         white-space: nowrap;
     }
 
+    .barrabusqueda {
+        border-bottom: 2px solid $color-principal;
+    }
+
+
     //las tarjetas tienen un hover y pulsado en las fotografías, quedándose quieto el texto
 
     .tarjeta a {

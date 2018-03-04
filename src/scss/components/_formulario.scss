@@ -1,4 +1,7 @@
-// CAMPOS Y BOTONES
+// CAMPOS Y BOTONES PARA VARIOS SITIOS
+// (incluye el de buscar)
+
+//quería quitar los estilos del navegador para meter los míos
 
 input {
     /* width: 100%; */
@@ -15,10 +18,10 @@ input::placeholder {
     font-weight: lighter;
 }
 
-
+//el buscador no tiene borde y cuando crece con el responsive sí porque estará separado
 .barrabusqueda {
     border-style: none;
-    border-bottom: 2px solid $color-texto;
+    border: none;
 }
 
 input {
@@ -44,6 +47,8 @@ input {
 
 }
 
+
+//estilo general del botón y los efectos de hover etc
 .boton {
     height: 48px;
     padding: 4px 16px;
@@ -68,22 +73,25 @@ input {
 }
 
 
-.bordelinea {
-    background: none;
-    color: $color-principal;
-    border-style: none;
-    border: 2px solid $color-principal;
+
+//variación 1
+.fondoprincipal {
+    background: $color-principal;
+    color: white;
+    border: none;
 }
 
-
+//variación 2
 .fondonegro {
     background: $color-texto;
     color: white;
     border: none;
 }
 
-.fondoprincipal {
-    background: $color-principal;
-    color: white;
-    border: none;
+//variación 3
+.bordelinea {
+    background: none;
+    color: $color-principal;
+    border-style: none;
+    border: 2px solid $color-principal;
 }
