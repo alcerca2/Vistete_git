@@ -1,12 +1,21 @@
+// Bloques grandes con imagen y texto
+// el superior es el de portada y el inferior es el del miniformulario suscribirse a newsletter
+
+
 .banner {
     background-color: $color-principal;
     color: white;
 }
 
+//título de "novedades"
 .banner h2{
     letter-spacing: 5px!important;
     text-transform: uppercase;
 }
+
+
+// mismo estilo para los 2 pero cambiando la foto de fondo x css. Se adapta al tamaño dentro del cuadro
+
 
 .fotofondo1 {
     background: url(bannerimages/banner.jpg);

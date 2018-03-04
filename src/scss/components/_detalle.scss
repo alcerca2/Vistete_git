@@ -1,3 +1,5 @@
+//contenedor flex para esta página
+
 .detalle {
     flex-wrap: wrap;
     flex-grow: 2;
@@ -5,7 +7,7 @@
     justify-content: space-around;
 }
 
-
+//parte con texto, separación con la sombra etc
 .descripcion {
     max-width: 20em;
     background: white;
@@ -14,10 +16,12 @@
     z-index: 50;
 }
 
+//títulos
 .descripcion h1, .descripcion h3 {
     margin: 0px;
 }
 
+// info secundaria
 .descripcion span {
     color: $color-gris;
     font-size: 150%;

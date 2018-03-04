@@ -1,3 +1,8 @@
+// CABECERA FIJA CON BARRA DE NAVEGACIÓN
+// (los links de cesta, cuenta etc no llevan a ningún sitio)
+
+
+//logo hecho con texto real y que enlaza al index
 .logo {
     display: flex;
     justify-content: flex-start;
@@ -6,20 +11,23 @@
 }
 
 
-
+//borde etc
 nav {
     border-bottom: 2px solid $color-texto;
     background: white;
     z-index: 100;
 }
 
+//layout de los enlaces
 .navbar {
     display: flex;
     justify-content: space-between;
-    margin-right: 32px;
-    /* arreglo raro */
+    margin-right: 24px;
+    /* arreglo para ajustar mejor los iconos */
 }
 
+
+//estilo para estos iconos
 .navbar a {
     text-decoration: none;
 }

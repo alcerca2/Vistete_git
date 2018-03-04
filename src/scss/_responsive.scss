@@ -1,7 +1,8 @@
-/* ############################################ */
+/* ########################################################################################### */
 
 
-/* indicadores del tamaño actual */
+/* indicadores del tamaño actual:
+son unos letreros que tenía para ayudarme a trabajar y he quitado */
 
 .ojoresponsive {
     color: rgba(0, 0, 0, 0.3);
@@ -9,45 +10,21 @@
 }
 
 
-/* ############################################ */
+/* ########################################################################################### */
 
 
-
-/* RESPONSIVE */
+/* RESPONSIVE PEQUEÑO ############################################### */
 
 @media (max-width: 439px) {
-    /* mostrar indicadores de tamaño */
-    #movil {
-        display: flex;
-    }
-    #tablet {
-        display: none;
-    }
-    #grande {
-        display: none;
-    }
-    #tocho {
-        display: none;
-    }
+ //aquí tenía unas cosas antes que al final he borrado pero lo dejo x si acaso
 }
 
 
-/* MEDIANO: LANDSCAPE, TABLET ETC */
+/* MEDIANO: LANDSCAPE, TABLET ETC ############################################### */
 
 @media (min-width: 440px) {
-    /* mostrar indicadores de tamaño */
-    #movil {
-        display: none;
-    }
-    #tablet {
-        display: flex;
-    }
-    #grande {
-        display: none;
-    }
-    #tocho {
-        display: none;
-    }
+
+    // la colección se separa en celdas
     .coleccion {
         display: flex;
         flex-wrap: wrap;
@@ -58,6 +35,9 @@
         margin: 24px;
         white-space: nowrap;
     }
+
+    //las tarjetas tienen un hover y pulsado en las fotografías, quedándose quieto el texto
+
     .tarjeta a {
         margin: 0;
     }
@@ -77,48 +57,38 @@
         background: white;
         transform: scale(0.98);
     }
-    .banner  {
+
+
+    // los bloques de banner se hacen más grandes
+    .banner {
         height: 220px;
     }
-
     .banner h2 {
-        font-size: 150%;
+        font-size: 280%;
+        letter-spacing: 10px!important;
     }
 
-    nav {
-        font-size: 110%;
-    }
-
+    
     // DETALLE #########################
+
+    //se parte en 2 columnas en caso de que quepa
     .fotogrande {
         flex-basis: 40%;
     }
-
-    .descripcion{
-    flex-basis: 20%;
+    .descripcion {
+        flex-basis: 20%;
+    }
 }
-}
 
 
-/* GRANDE: TABLET ANCHA Y ESCRITORIO */
+/* GRANDE: TABLET ANCHA Y ESCRITORIO ############################################### */
 
 @media (min-width: 1024px) {
-    /* mostrar indicadores de tamaño */
-    #movil {
-        display: none;
-    }
-    #tablet {
-        display: none;
-    }
-    #grande {
-        display: flex;
-    }
-    #tocho {
-        display: none;
-    }
 
-
-
+    .banner h2 {
+        font-size: 400%;
+        letter-spacing: 20px!important;
+    }
     .tarjeta {
         flex-basis: 20%;
         margin: 48px;
@@ -128,55 +98,38 @@
     .navbar {
         padding: 0px 10%;
     }
+
+    // ajuste a mano para alinear finamente con la cabecera
+    .navbar {
+        margin-left: -8px;
+        margin-right: -16px;
+    }
+
+
+    //separar los espaciados en varios elementos
     .contenido {
         padding: 48px 10%;
     }
-
     .padx2 {
-        padding: 48px 0px;
+        padding: 32px 0px;
     }
-
     .padx3 {
         padding: 48px 0px;
     }
-
-    nav {
-        font-size: 120%;
+    .banner {
+        margin-top: 48px;
+    }
+    .barrabusqueda {
+        font-size: 150%;
     }
 
-
+    //con al maquetación de aquí, que es un poco freestyle, con ventanas muy grandes a veces se vuelve a quedar en 1 columna, 
+    //pero en general son 2 a partir de 1024
     .detalle {
         flex-wrap: nowrap;
         flex-grow: 1;
         flex-direction: row;
         max-width: 800px;
         max-height: 720px;
-
-    }
-
-}
-
-// TOCHO
-@media (min-width: 1200px) {
-
-
-    /* mostrar indicadores de tamaño */
-    #movil {
-        display: none;
-    }
-    #tablet {
-        display: none;
-    }
-    #grande {
-        display: none;
-    }
-
-    #tocho {
-        display: flex;
-    }
-
-
-    .contenido {
-        margin: 48px auto;
     }
 }

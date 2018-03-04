@@ -10,12 +10,29 @@ maximun-scale=1.0, user-scalable=no">
 
 <title>Vístete</title>
 
+<!-- cargar fuente de texto y de iconos -->
 <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700,900&amp;subset=latin-ext" rel="stylesheet">
 <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 </head>
 
+<!-- 
+    Alejandro Cervera
+    2018-04-03
+    +
+    (fotos de pexels.com e iconos de fontawesome)
+ -->
+
+
 <body>
-    <nav class="ancho padx2 fija">
+    
+<!-- barra de navegación con el logo y los botones de mentira de:
+     - usuario
+     - bolsa
+     - menú (si funcionara, sacaría categorías de la tienda)
+
+-->
+
+<nav class="ancho padx2 fija">
     <div class="navbar fondopruebas">
         <a style="padding: 0px 4px" href="index.html">
             <!-- el style: para 1 pequeño arreglo de posición -->
@@ -31,29 +48,40 @@ maximun-scale=1.0, user-scalable=no">
 </nav>
     <article class="contenido centrado fondopruebas">
         <div class="navmargen" id="arriba"></div>
-        <div class="banner textocentro padx3 flexcentro fotofondo1">
+        <!-- bloque de portada -->
+
+<div class="banner textocentro padx3 flexcentro fotofondo1">
     <h2>Novedades</h2>
 </div>
-        <div class="barrabusqueda ancho fondopruebas">
-    <input class="ancho padx3" type="search" placeholder="buscar"></input>
+        <!-- barra para buscar, de momento decorativa -->
+
+<div class="barrabusqueda ancho fondopruebas">
+    <input class="ancho padx2" type="search" placeholder="buscar"></input>
 </div>
-        <div class="coleccion fondoprueba">
+        <!-- GALERÍA CON 10 PRODUCTOS -->
+
+<div class="coleccion fondoprueba">
 
 
 
     <!-- TARJETA PRODUCTO ////////////////////////////////////////// -->
     <article class="tarjeta">
+        <!-- enlace al detalle -->
         <a href="detail.html" class="producto fondopruebas">
+            <!-- lo del onerror lo probé porque lo encontré en internet por casualidad -->
             <img class="ancho" src="images/product1.jpg" onerror="this.src='images/noimage.png';this.removeAttribute('onerror');">
         </a>
+        <!-- nombre y precio -->
         <div class="info">
             <div class="titulo">
-                <h3>Manigui</h3>
+                <h3>Damn Son</h3>
             </div>
-            <span>30 € &nbsp; Camisa</span>
+            <span>30.00 € &nbsp; Camisa</span>
         </div>
     </article>
     <!-- ////////////////////////////////////////////////////////// -->
+
+    <!-- Más tarjetas iguales -->
 
     <article class="tarjeta">
         <a href="detail.html" class="producto fondopruebas">
@@ -63,7 +91,7 @@ maximun-scale=1.0, user-scalable=no">
             <div class="titulo">
                 <h3>Escarfa</h3>
             </div>
-            <span>30 € &nbsp; Bufanda</span>
+            <span>25.00 € &nbsp; Bufanda</span>
         </div>
     </article>
     <!-- ////////////////////////////////////////////////////////// -->
@@ -76,7 +104,7 @@ maximun-scale=1.0, user-scalable=no">
             <div class="titulo">
                 <h3>Rusaco</h3>
             </div>
-            <span>30 € &nbsp; Gorro</span>
+            <span>15.00 € &nbsp; Gorro</span>
         </div>
     </article>
     <!-- ////////////////////////////////////////////////////////// -->
@@ -89,7 +117,7 @@ maximun-scale=1.0, user-scalable=no">
             <div class="titulo">
                 <h3>García</h3>
             </div>
-            <span>30 € &nbsp; Sombrero</span>
+            <span>20.00 € &nbsp; Sombrero</span>
         </div>
     </article>
     <!-- ////////////////////////////////////////////////////////// -->
@@ -102,7 +130,7 @@ maximun-scale=1.0, user-scalable=no">
             <div class="titulo">
                 <h3>Palpié</h3>
             </div>
-            <span>30 € &nbsp; Botas</span>
+            <span>50.00 € &nbsp; Botas</span>
         </div>
     </article>
     <!-- ////////////////////////////////////////////////////////// -->
@@ -115,7 +143,7 @@ maximun-scale=1.0, user-scalable=no">
             <div class="titulo">
                 <h3>Rasca</h3>
             </div>
-            <span>30 € &nbsp; Guantes</span>
+            <span>10.00 € &nbsp; Guantes</span>
         </div>
     </article>
     <!-- ////////////////////////////////////////////////////////// -->
@@ -123,14 +151,14 @@ maximun-scale=1.0, user-scalable=no">
     <!-- ////////////////////////////////////////////////////////// -->
 
     <article class="tarjeta">
-            <a href="detail.html" class="producto fondopruebas">
+            <a href="detail.html#detalle" class="producto fondopruebas">
                 <img class="ancho" src="images/product7.jpg" onerror="this.src='images/noimage.png';this.removeAttribute('onerror');">
             </a>
             <div class="info">
                 <div class="titulo">
-                    <h3>2049</h3>
+                    <h3>Jarrison</h3>
                 </div>
-                <span>30 € &nbsp; Camiseta</span>
+                <span>25.00 € &nbsp; Camiseta</span>
             </div>
         </article>
         <!-- ////////////////////////////////////////////////////////// -->
@@ -143,7 +171,7 @@ maximun-scale=1.0, user-scalable=no">
                 <div class="titulo">
                     <h3>Colgón</h3>
                 </div>
-                <span>30 € &nbsp; Collar</span>
+                <span>20.00 € &nbsp; Collar</span>
             </div>
         </article>
         <!-- ////////////////////////////////////////////////////////// -->
@@ -156,7 +184,7 @@ maximun-scale=1.0, user-scalable=no">
                 <div class="titulo">
                     <h3>Ejeje</h3>
                 </div>
-                <span>30 € &nbsp; Camiseta</span>
+                <span>20.00 € &nbsp; Camiseta</span>
             </div>
         </article>
         <!-- ////////////////////////////////////////////////////////// -->
@@ -169,7 +197,7 @@ maximun-scale=1.0, user-scalable=no">
                 <div class="titulo">
                     <h3>Denadal</h3>
                 </div>
-                <span>30 € &nbsp; Bañador</span>
+                <span>30.00 € &nbsp; Bañador</span>
             </div>
         </article>
         <!-- ////////////////////////////////////////////////////////// -->
@@ -177,7 +205,13 @@ maximun-scale=1.0, user-scalable=no">
 
 
 </div>
-        <div class="banner textocentro padx3 fotofondo2">
+        <!--
+    bloque que aparece debajo al final del listado.
+    tiene un pequeño formulario para introducir el mail
+    y suscribirte a un newsletter
+ -->
+
+<div class="banner textocentro padx3 fotofondo2">
     <h3>Suscríbete para recibir lo más fresco<br>¡y abrígate!
     </h3>
 <form class="textocentro padx2 margenvx3">
@@ -185,23 +219,18 @@ maximun-scale=1.0, user-scalable=no">
 </form>
 </div>
     </article>
-    <footer class="ancho textocentro padx3 flexcentro">
+    <!-- pie de página con enlaces de mentira y botón de ir arriba de verdad -->
+
+<footer class="ancho textocentro padx3 flexcentro">
     <p>
         <strong>© Vístete 2018</strong> &nbsp;
-        <!--indicadores para responsive -->
-        <p class="ojoresponsive padx1" id="movil"> (móvil) </p>
-        <p class="ojoresponsive padx1" id="tablet"> (mediano) </p>
-        <p class="ojoresponsive padx1" id="grande"> (grande) </p> 
-        <p class="ojoresponsive padx1" id="tocho"> (tocho) </p>  
         <br>
         <a href="#0">About</a>
         <br>
         <a href="#0">FAQ</a>
         <br>
-        <br>
- 
-        <a href="#arriba">
-            <strong>Arriba &uarr;</strong>
+        <a href="#arriba" class="irarriba bordelinea">
+            <i class="fas fa-arrow-up"></i>
         </a>
 
     </p>

@@ -301,14 +301,15 @@ template {
 [hidden] {
   display: none; }
 
-*:focus {
-  box-shadow: none;
-  outline: none; }
-
 * {
   transition: all 300ms;
   transition-delay: 200ms;
   transition-timing-function: ease; }
+
+*:focus {
+  box-shadow: none;
+  outline: none;
+  scroll-behavior: smooth; }
 
 body {
   font-family: "Work Sans", Sans-serif;
@@ -316,13 +317,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   color: #333;
-  line-height: 1.4;
-  scroll-behavior: smooth; }
+  line-height: 1.4; }
 
 p {
-  font-weight: lighter;
-  orphans: 2;
-  widows: 2; }
+  font-weight: lighter; }
 
 h1,
 h2,
@@ -343,7 +341,10 @@ a:focus {
   border-radius: 4px; }
 
 a:active {
-  background: rgba(0, 0, 0, 0.1); }
+  background: rgba(0, 0, 0, 0.1);
+  filter: brightness(80%);
+  transform: scale(0.96);
+  box-shadow: none; }
 
 a img {
   object-fit: cover; }
@@ -355,8 +356,10 @@ aside {
   float: right; }
 
 /* algunas cosas las he separado bastante, 
-como hacen en los frameworks, 
-porque he visto que asi se me hace un poco más cómodo, en lugar de clases largas */
+para probar lo que he visto que hacen en los frameworks, 
+porque para alguna cosa se me hace un poco más cómodo, en lugar de todo clases largas
+si luego añado más componentes creo que me puede venir bien
+*/
 /*
 .fondopruebas {
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -400,9 +403,6 @@ porque he visto que asi se me hace un poco más cómodo, en lugar de clases larg
 .textocentro {
   text-align: center; }
 
-.navmargen {
-  height: 60px; }
-
 .mayusculas {
   text-transform: uppercase; }
 
@@ -411,6 +411,9 @@ porque he visto que asi se me hace un poco más cómodo, en lugar de clases larg
 
 .textocolor {
   color: #3BB !important; }
+
+.navmargen {
+  height: 60px; }
 
 .logo {
   display: flex;
@@ -426,8 +429,8 @@ nav {
 .navbar {
   display: flex;
   justify-content: space-between;
-  margin-right: 32px;
-  /* arreglo raro */ }
+  margin-right: 24px;
+  /* arreglo para ajustar mejor los iconos */ }
 
 .navbar a {
   text-decoration: none; }
@@ -459,7 +462,6 @@ nav {
   background-position: center center;
   background-size: cover; }
 
-/* GALERÏA CON TARJETAS DE PRODUCTO @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 .coleccion {
   flex-wrap: wrap; }
 
@@ -489,7 +491,6 @@ nav {
   text-align: center; }
 
 .producto img {
-  object-fit: cover;
   display: block; }
 
 .tarjeta .producto {
@@ -546,7 +547,7 @@ input {
   margin: none;
   display: inline-block;
   border-radius: 4px;
-  font-size: 80%; }
+  font-size: 75%; }
 
 .boton {
   height: 48px;
@@ -558,6 +559,15 @@ input {
   display: inline-block;
   border-radius: 4px;
   font-size: 80%; }
+
+.boton:hover, .boton:focus {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 20px rgba(0, 0, 50, 0.28); }
+
+.boton:active {
+  filter: brightness(80%);
+  transform: scale(0.96);
+  box-shadow: none; }
 
 .bordelinea {
   background: none;
@@ -578,8 +588,15 @@ input {
 footer {
   background: none;
   min-height: 100px;
-  line-height: 2;
+  line-height: 3;
   font-size: 12px; }
+
+.irarriba {
+  text-decoration: none;
+  height: 32px;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 4px; }
 
 .detalle {
   flex-wrap: wrap;
@@ -601,36 +618,17 @@ footer {
   color: rgba(0, 0, 0, 0.5);
   font-size: 150%; }
 
-/* ############################################ */
-/* indicadores del tamaño actual */
+/* ########################################################################################### */
+/* indicadores del tamaño actual:
+son unos letreros que tenía para ayudarme a trabajar y he quitado */
 .ojoresponsive {
   color: rgba(0, 0, 0, 0.3);
   display: inline; }
 
-/* ############################################ */
-/* RESPONSIVE */
-@media (max-width: 439px) {
-  /* mostrar indicadores de tamaño */
-  #movil {
-    display: flex; }
-  #tablet {
-    display: none; }
-  #grande {
-    display: none; }
-  #tocho {
-    display: none; } }
-
-/* MEDIANO: LANDSCAPE, TABLET ETC */
+/* ########################################################################################### */
+/* RESPONSIVE PEQUEÑO ############################################### */
+/* MEDIANO: LANDSCAPE, TABLET ETC ############################################### */
 @media (min-width: 440px) {
-  /* mostrar indicadores de tamaño */
-  #movil {
-    display: none; }
-  #tablet {
-    display: flex; }
-  #grande {
-    display: none; }
-  #tocho {
-    display: none; }
   .coleccion {
     display: flex;
     flex-wrap: wrap;
@@ -658,25 +656,18 @@ footer {
   .banner {
     height: 220px; }
   .banner h2 {
-    font-size: 150%; }
-  nav {
-    font-size: 110%; }
+    font-size: 280%;
+    letter-spacing: 10px !important; }
   .fotogrande {
     flex-basis: 40%; }
   .descripcion {
     flex-basis: 20%; } }
 
-/* GRANDE: TABLET ANCHA Y ESCRITORIO */
+/* GRANDE: TABLET ANCHA Y ESCRITORIO ############################################### */
 @media (min-width: 1024px) {
-  /* mostrar indicadores de tamaño */
-  #movil {
-    display: none; }
-  #tablet {
-    display: none; }
-  #grande {
-    display: flex; }
-  #tocho {
-    display: none; }
+  .banner h2 {
+    font-size: 400%;
+    letter-spacing: 20px !important; }
   .tarjeta {
     flex-basis: 20%;
     margin: 48px;
@@ -684,30 +675,22 @@ footer {
     max-width: 290px; }
   .navbar {
     padding: 0px 10%; }
+  .navbar {
+    margin-left: -8px;
+    margin-right: -16px; }
   .contenido {
     padding: 48px 10%; }
   .padx2 {
-    padding: 48px 0px; }
+    padding: 32px 0px; }
   .padx3 {
     padding: 48px 0px; }
-  nav {
-    font-size: 120%; }
+  .banner {
+    margin-top: 48px; }
+  .barrabusqueda {
+    font-size: 150%; }
   .detalle {
     flex-wrap: nowrap;
     flex-grow: 1;
     flex-direction: row;
     max-width: 800px;
     max-height: 720px; } }
-
-@media (min-width: 1200px) {
-  /* mostrar indicadores de tamaño */
-  #movil {
-    display: none; }
-  #tablet {
-    display: none; }
-  #grande {
-    display: none; }
-  #tocho {
-    display: flex; }
-  .contenido {
-    margin: 48px auto; } }

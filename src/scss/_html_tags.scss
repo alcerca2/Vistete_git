@@ -1,16 +1,21 @@
-//quitar sombrita del focus
-*:focus {
-    box-shadow: none;
-    outline: none;
-}
 
 
+//animación para todo
 * {
     transition: all 300ms;
     transition-delay: 200ms;
     transition-timing-function: ease;
 }
 
+//quitar sombrita del focus
+*:focus {
+    box-shadow: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+
+//estilos en las etiquetas principales
 body {
     font-family: $font-principal;
     color: $color-texto;
@@ -18,13 +23,11 @@ body {
     flex-wrap: wrap;
     color: #333;
     line-height: 1.4;
-    scroll-behavior: smooth;
+
 }
 
 p {
     font-weight: lighter;
-    orphans: 2;
-    widows: 2;
 }
 
 h1,
@@ -39,6 +42,12 @@ h5 {
 
 
 /* LINKS */
+//tienen el color de donde estén
+//+ un efecto de hover y etc con fondito y reescale
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 a,
 a:visited {
@@ -54,16 +63,26 @@ a:focus {
 
 a:active {
     background: rgba(0, 0, 0, 0.1);
+        filter: brightness(80%);
+        transform: scale(0.96);
+        box-shadow: none;
 }
 
 a img {
     object-fit: cover;
 }
 
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//como no quería tocar el reset y tal lo he tenido que volver a añadir
 strong {
     font-weight: bold;
 }
 
+//el aside creo que al final: nada
 aside {
     float: right;
 }

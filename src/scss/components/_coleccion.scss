@@ -1,9 +1,13 @@
-/* GALERÏA CON TARJETAS DE PRODUCTO @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+// GALERíA CON TARJETAS DE PRODUCTO
 
+
+//contenedor flex
 .coleccion {
     flex-wrap: wrap;
 }
 
+
+//celda del producto
 .tarjeta {
     border-style: none;
     display: flex;
@@ -27,17 +31,22 @@
     background: none;
 }
 
+
+//parte con texto: precio etc
+
 .tarjeta .info {
     padding-bottom: 10px;
     padding: 16px;
     text-align: center;
 }
 
+//foto en sí que será el enlace
 .producto img {
-    object-fit: cover;
+    // object-fit: cover; (prueba)
     display: block;
 }
 
+//contenedor de la foto
 .tarjeta .producto {
     padding: 0;
     max-width: 100%;
@@ -49,6 +58,7 @@
     margin: 0;
 }
 
+//enlace en las tarjetas
 .coleccion a {
     padding: 0;
     margin: 0;
@@ -57,6 +67,7 @@
     transition: all 200ms;
 }
 
+//info secundaria
 .tarjeta span {
     font-weight: lighter;
     color: $color-gris;

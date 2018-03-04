@@ -1,16 +1,23 @@
 // CLASES CON DETALLES PARA ACUMULAR
 
 /* algunas cosas las he separado bastante, 
-como hacen en los frameworks, 
-porque he visto que asi se me hace un poco más cómodo, en lugar de clases largas */
+para probar lo que he visto que hacen en los frameworks, 
+porque para alguna cosa se me hace un poco más cómodo, en lugar de todo clases largas
+si luego añado más componentes creo que me puede venir bien
+*/
 
 
-
+//este era que quitaba y ponía mientras montaba cosas para ver si se solapaban y etc
 /*
 .fondopruebas {
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: rgba(255, 0, 0, 0.1);
 }*/
+
+
+// cosas sueltas para añadir a otros estilos más concretos
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .centrado {
     margin-right: auto;
@@ -63,11 +70,6 @@ porque he visto que asi se me hace un poco más cómodo, en lugar de clases larg
     text-align: center;
 }
 
-//para que las cosas no empiecen x debajo de la nav
-.navmargen {
-    height: 60px;
-}
-
 .mayusculas {
     text-transform: uppercase;
 }
@@ -79,3 +81,14 @@ porque he visto que asi se me hace un poco más cómodo, en lugar de clases larg
 .textocolor {
     color: $color-principal!important;
 }
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//para que las cosas no empiecen x debajo de la nav
+.navmargen {
+    height: 60px;
+}
+

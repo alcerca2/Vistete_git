@@ -11,12 +11,21 @@ maximun-scale=1.0, user-scalable=no">
 
 <title>Vístete</title>
 
+<!-- cargar fuente de texto y de iconos -->
 <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700,900&amp;subset=latin-ext" rel="stylesheet">
 <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="ancho padx2 fija">
+    
+<!-- barra de navegación con el logo y los botones de mentira de:
+     - usuario
+     - bolsa
+     - menú (si funcionara, sacaría categorías de la tienda)
+
+-->
+
+<nav class="ancho padx2 fija">
     <div class="navbar fondopruebas">
         <a style="padding: 0px 4px" href="index.html">
             <!-- el style: para 1 pequeño arreglo de posición -->
@@ -32,12 +41,19 @@ maximun-scale=1.0, user-scalable=no">
 </nav>
     <article class="contenido centrado fondopruebas">
         <div class="navmargen" id="arriba"></div>
-        <div class="coleccion fondoprueba margenvx3 padx3">
-            <article><div>
-    <img class="ancho" src="images/product1.jpg" onerror="this.src='images/noimage.png';this.removeAttribute('onerror');">
+        <div class="coleccion fondoprueba margenvx3 padx3" >
+            <article><!-- foto para el detalle de producto -->
+
+<div>
+    <img id="detalle" class="ancho" src="images/product1.jpg" onerror="this.src='images/noimage.png';this.removeAttribute('onerror');">
 </div></article>
             <aside class="detalle margenvx3 fondoprueba">
-                <form class="textocentro padx3 margenvx3 fondoprueba">
+                <!-- Botones para hacer cosas con el producto
+-seleccionar talla
+-añadir a la cesta
+-->
+
+<form class="textocentro padx3 margenvx3 fondoprueba">
         <select class="boton bordelinea margenvx3" type="email" placeholder="Talla" required>
                 <option value="S">Talla: S </option>
                 <option value="M">Talla: M </option>
@@ -45,18 +61,18 @@ maximun-scale=1.0, user-scalable=no">
                 <option value="XL">Talla: XL</option>
         </select>
 
-        &nbsp;&nbsp;<button class="boton fondoprincipal">Añadir a la bolsa</button>
+        &nbsp;&nbsp;<button class="boton fondoprincipal">¡Pa la bolsa!</button>
 </form>
-                <!-- DESCRIPCIÓN ETC ////////////////////////////////////////// -->
+                <!-- DESCRIPCIÓN ETC en el detalle de producto ////////////////////////////////////////// -->
 
 <div class="parrafada centrado descripcion fondopruebas">
-    <h1>Manigui</h1>
+    <h1>Damn Son</h1>
     <span>
-    30 € &nbsp;Camisa
+    30.00 € &nbsp;Camisa
     </span>
     <h4>Sobre el producto</h4>
     <p>
-        Candemore jan derat a ante <strong>venenatis</strong> dapibus posuere velit aliquet. Vivamus sagittis lorem.  Aenean lacinia <i>bibendum</i> nulla sed consectetur.
+        Where'd you find this? Lorem ipsum <strong>candemore</strong> derat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lorem.  Aenean lacinia <i>bibendum</i> nulla sed consectetur.
     </p>
 
     <a href="#0" class="textocolor"><strong>Ver más</strong></a>
@@ -64,23 +80,18 @@ maximun-scale=1.0, user-scalable=no">
             </aside>
         </div>
     </article>
-    <footer class="ancho textocentro padx3 flexcentro">
+    <!-- pie de página con enlaces de mentira y botón de ir arriba de verdad -->
+
+<footer class="ancho textocentro padx3 flexcentro">
     <p>
         <strong>© Vístete 2018</strong> &nbsp;
-        <!--indicadores para responsive -->
-        <p class="ojoresponsive padx1" id="movil"> (móvil) </p>
-        <p class="ojoresponsive padx1" id="tablet"> (mediano) </p>
-        <p class="ojoresponsive padx1" id="grande"> (grande) </p> 
-        <p class="ojoresponsive padx1" id="tocho"> (tocho) </p>  
         <br>
         <a href="#0">About</a>
         <br>
         <a href="#0">FAQ</a>
         <br>
-        <br>
- 
-        <a href="#arriba">
-            <strong>Arriba &uarr;</strong>
+        <a href="#arriba" class="irarriba bordelinea">
+            <i class="fas fa-arrow-up"></i>
         </a>
 
     </p>
